@@ -1,0 +1,29 @@
+.list-item {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  clear: left;
+  cursor: pointer;
+  height: 100px;
+  margin-bottom: 10px;
+  overflow: hidden;
+
+  h2 {
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+
+  img {
+    float: left;
+    filter: grayscale(1);
+    margin-right: 20px;
+  }
+
+  &:hover, &.selected {
+    box-shadow: 3px 3px 3px lightgrey;
+
+    img {
+      filter: grayscale(0);
+    }
+  }
+}
